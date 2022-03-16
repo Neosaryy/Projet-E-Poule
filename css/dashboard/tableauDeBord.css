@@ -1,0 +1,258 @@
+body{
+    background-color: #F6F8F5;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-page{
+    display: flex;
+
+}
+
+.content{
+
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+.content h2{
+    font-size: 35px;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+.droite-page{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.div-bloc-info{
+    display: flex;
+    width: 300px;
+}
+
+.gauche{
+    padding: 15px;
+   
+}
+
+.droite{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.valeur{
+    font-size: 35px;
+}
+
+.nboeuf-d{
+    background-color: #605CA8;
+}
+.nboeuf-g{
+    background-color: #534288;
+}
+
+.nouriture-g{
+    background-color: #DA6400;
+}
+
+.nouriture-d{
+    background-color: #EF8333;
+}
+
+.eau-g{
+    background-color: #009BC2;
+}
+
+.eau-d{
+    background-color: #52C1EF;
+}
+
+.temperature-g{
+    background-color: #C12719;
+}
+
+.temperature-d{
+    background-color: #DD4B39;
+}
+
+.info-timeline{
+    margin: 100px;
+
+}
+
+.day{
+    background-color: #40A681;
+    width: 90px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.card-info{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+.img-barre{
+    min-width: 110px;
+    overflow: hidden;
+}
+.barre{
+    position: relative;
+    left: 50px;
+    width: 5px;
+    height: 100%;
+    background-color: grey;
+}
+
+.barre-haut{
+    position: relative;
+    left: 50px;
+    width: 5px;
+    height: 20px;
+    background-color: grey;
+}
+
+.icon-timeline{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte-info-poule{
+    box-shadow: #E4E4E4 1px 2px 3px 3px ;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+.titre{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.description{
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatar{
+    padding: 15px;
+}
+
+.clock-icon{
+    width: 15px;
+}
+
+.information-poulailler{
+    background-color: white;
+    margin-top: 100px;
+}
+
+.tab-info{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.stats-de-ponte{
+    margin-top: 50px;
+    background-color: white;
+    padding: 1px 20px;
+    font-weight: lighter;
+}
+
+.stats-de-ponte h3{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.texte-valeur{
+    color: #009BC2;
+    font-weight: bolder;
+}
+
+.nom-du-site{
+    font-size: 20px;
+}
+
+.info-tab-graph{
+    margin-right: 10px;
+}
+
+
+@media (max-width: 1200px){
+
+    .description p{
+        font-size: 13px;
+
+    }
+
+    .info-tab-graph {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+
+    .droite-page{
+        display: none;
+    }
+
+    .info{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-bloc-info{
+        margin: 5px auto;
+
+    }
+}
+
+@media (max-width: 1300px){
+
+    .div-bloc-info{
+        flex-basis: 50%;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0;
+    }
+
+    .content h2{
+        text-align: center;
+    }
+}
